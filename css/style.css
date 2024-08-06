@@ -1,0 +1,297 @@
+ /* Fonte latin */
+ @font-face {
+     font-family: 'Allerta';
+     font-style: normal;
+     font-weight: 400;
+     src: url(font/allerta.woff2) format('woff2');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ * {
+     font-family: Allerta;
+ }
+
+ body {
+     color: #fff;
+     background: #006400;
+     margin: 0;
+ }
+
+ body::before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(45deg, transparent 25%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2) 100%);
+     background-size: 20px 20px;
+ }
+
+ video {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     z-index: 9999;
+     background: black;
+ }
+
+ video.awefortec {
+    background: #010001;
+ }
+
+ video.blackjack {
+    background: #004800;
+ }
+
+ footer.versao {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 11px;
+    color: #fff;
+    z-index: 99999;
+ }
+
+ .telaHome {
+     position: fixed;
+     background: #000000cf;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     align-content: center;
+ }
+
+ .telaHome button {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background: orange;
+     border: none;
+     font-size: 16px;
+     color: #fff;
+     font-weight: 100;
+     cursor: pointer;
+ }
+
+ .telaHome button.red {
+     background: red;
+ }
+
+ main {
+     position: fixed;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+ }
+
+ main .volume {
+     position: absolute;
+     z-index: 2;
+     width: 30px;
+     height: 30px;
+     top: 0;
+     right: 0;
+     margin: 15px;
+     cursor: pointer;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+ }
+
+ main .volume svg {
+     width: 100%;
+     height: 100%;
+ }
+
+ main section {
+     position: relative;
+     box-sizing: border-box;
+     width: 50%;
+     height: 100%;
+     border-right: solid 2px #fff;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+ }
+
+ main section.none {
+     border-right: none;
+ }
+
+ main section .info {
+     position: absolute;
+     top: 0;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 999;
+ }
+
+ main section .info h4 {
+     margin: 0;
+     background: #009688;
+     padding: 8px 25px;
+     border-bottom-left-radius: 10px;
+     font-weight: 100;
+ }
+
+ main section .info span {
+     border: solid 1px;
+     border-top: none;
+     padding: 10px 25px;
+     font-size: 13px;
+     border-bottom-right-radius: 10px;
+ }
+
+ main section .cartas {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+ }
+
+ main section label {
+     position: fixed;
+     bottom: 0;
+     padding: 25px;
+ }
+
+ main section label.z {
+     z-index: -1;
+ }
+
+ main section label button {
+     padding: 5px 10px;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+     font-weight: 100;
+     margin: 0 5px;
+ }
+
+ .c {
+     background: orange;
+ }
+
+ .s {
+     background: red;
+ }
+
+ .carta {
+     appearance: auto;
+     width: 100px;
+     height: 150px;
+     background: #fff;
+     border-radius: 5px;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     padding: 10px;
+     margin: 5px;
+     position: relative;
+     box-sizing: border-box;
+     justify-content: center;
+     align-content: center;
+     animation: surgir 0.3s ease-in;
+ }
+
+ .carta h4 {
+     margin: 0;
+     font-size: 25px;
+     position: absolute;
+     width: 100%;
+ }
+
+ .carta .text1 {
+     top: 5px;
+     left: 8px;
+ }
+
+ .carta .text2 {
+     bottom: 5px;
+     right: 8px;
+     text-align: right;
+ }
+
+ .carta span,
+ .carta svg {
+     appearance: auto;
+     width: 70px;
+     height: 70px;
+ }
+
+ .red svg,
+ .red h4 {
+     fill: red;
+     color: red;
+ }
+
+ .black svg,
+ .black h4 {
+     fill: black;
+     color: black;
+ }
+
+ /* animação carta  */
+
+ @keyframes surgir {
+     to {
+         transform: scale(1);
+     }
+
+     from {
+         transform: scale(1.8);
+     }
+ }
+
+ /* Desiner Telefone  */
+
+ @media only screen and (max-height: 600px) {
+     .carta {
+         width: 85px;
+         height: 125px;
+     }
+
+     .carta span,
+     .carta svg {
+         width: 50px;
+         height: 50px;
+     }
+ }
+
+ /* Tela de erro  */
+
+.err {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+}
+
+.err span {
+    width: 200px;
+    content: url(../img/erro.png);
+    margin-bottom: 10px;
+}
