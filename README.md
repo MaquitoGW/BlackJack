@@ -1,6 +1,6 @@
 # BlackJack
 
-![BlackJack Intro](img/backjack_intro.mp4)
+![BlackJack](./img/logo.png)
 
 ## Sobre o Jogo
 
