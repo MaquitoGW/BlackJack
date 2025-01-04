@@ -1,28 +1,46 @@
-# BlackJack
+<div align="center">
+  <img src="./img/logo.png" alt="BlackJack logo" />
+</div>
 
-![BlackJack](./img/logo.png)
+###
 
-## Sobre o Jogo
+<div align="center">
+  <a href="https://www.linkedin.com/in/maquitogw/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo" />
+  </a>
+  <a href="mailto:maicongoncalves826@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo" />
+  </a>
+  <a href="https://x.com/maquitogw" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter logo" />
+  </a>
+  <a href="https://instagram.com/maquitogw" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo" />
+  </a>
+</div>
 
-BlackJack é um jogo inspirado no famoso jogo de cartas "21", popular no Brasil. Este jogo foi desenvolvido em JavaScript e pode ser executado tanto em navegadores quanto como um programa independente.
+## 🃏 BlackJack
+
+### Sobre o Jogo
+
+**BlackJack** é um jogo de cartas inspirado no popular jogo "21", muito conhecido no Brasil. Desenvolvido com **JavaScript**, o jogo é interativo e pode ser jogado diretamente no navegador ou compilado como uma aplicação independente.
 
 ### Funcionalidades
 
-- Jogo de cartas interativo inspirado no BlackJack tradicional.
-- Interface amigável e responsiva.
-- Compatível com navegadores e executável como aplicação independente.
+- 🎮 Jogo de cartas interativo baseado nas regras tradicionais do BlackJack.
+- 💻 Interface simples, amigável e responsiva, proporcionando uma experiência suave em qualquer dispositivo.
+- 📱 Compatível com navegadores ou como aplicação independente para desktop ou mobile.
 
-### Instruções de Compilação
+### 🛠️ Tecnologias Utilizadas
 
-Para compilar o jogo como uma aplicação independente, você pode utilizar o *Website 2 APK Builder Pro*. Siga os passos abaixo:
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js" height="40" alt="HTML, CSS, JS" />
+</div>
 
-1. Abra o arquivo `BlackJack.webapp` no *Website 2 APK Builder Pro*.
-2. Salve o projeto na pasta `/Dist`.
+### 📜 Licença
 
-### Versões Finalizadas
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-As versões finalizadas do jogo estão localizadas na pasta `/Versions`. A última versão já está com o CSS e JavaScript minificados para melhor desempenho.
+---
 
-### Importante
-
-Certifique-se de verificar a pasta `/Versions` para obter a versão mais recente do jogo, pronta para uso.
+<p align="center">© 2025 Maicon Gonçalves Wandermazz</p>

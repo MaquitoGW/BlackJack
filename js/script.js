@@ -1,16 +1,4 @@
 //criar intro
-
-function awefortec() {
-    var intro = document.createElement('video');
-    intro.autoplay;
-    intro.className = 'awefortec';
-    intro.src = 'img/awefortec_intro.mp4';
-    document.body.appendChild(intro);
-    intro.play();
-
-    return true;
-}
-
 function blackjackIntro() {
     var intro = document.createElement('video');
     intro.autoplay;
@@ -25,20 +13,17 @@ function blackjackIntro() {
 
 //chamar
 
-if (awefortec()) {
-    var totalTimer = 1;
-    var timerIntro = setInterval(() => {
-        document.body.removeChild(document.querySelector('video'));
-        if (blackjackIntro()) {
-            if (totalTimer == 2) {
-                clearInterval(timerIntro);
-                document.body.removeChild(document.querySelector('video'));
-                createAudioElement(audio);
-            }
-            totalTimer++;
+var totalTimer = 1;
+var timerIntro = setInterval(() => {
+    if (blackjackIntro()) {
+        if (totalTimer == 2) {
+            clearInterval(timerIntro);
+            document.body.removeChild(document.querySelector('video'));
+            createAudioElement(audio);
         }
-    }, 3000);
-}
+        totalTimer++;
+    }
+}, 3000);
 
 //criar o som da pagina
 var audio = document.createElement('audio');
